@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Julius Sans One'), local('JuliusSansOne-Regular'), url(https://fonts.gstatic.com/s/juliussansone/v8/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsXy6KHHg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: black;
+    color: white;
+}
+
+strong {
+    font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+/*navigation scrollbar on the right*/
+
+.navigation {
+    position: fixed;
+    z-index: 10;
+    width: 16px;
+    top: 300px;
+    left: 1390px;
+    transition: 1s all cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.navigation a {
+    border-radius: 100%;
+    border: 2px solid rgba(255,255,255,0);
+    display: block;
+    margin-bottom: 10px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    transition: 1s all cubic-bezier(0.23, 1, 0.32, 1)
+}
+
+.navigation a span {
+    border-radius: 100%;
+    background: rgba(255,255,255,0.2);
+    display: block;
+    width: 14px;
+    height: 14px;
+    
+}
+
+.navigation a:hover {
+    border: 2px solid rgba(255,255,255,0.7);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/*HEADER/HOMEPAGE*/
+.header {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Tokyo-Night.jpeg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    text-align: center;
+    
+}
+
+.header .container {
+    position: relative;
+    top: 350px;
+}
+
+.header h1 {
+    color: white;
+    letter-spacing: 0.3em;
+    margin: 0 auto;
+    font-weight: 700;
+
+}
+
+.header h2 {
+    color: white;
+    margin: 0 auto;
+    padding: 10px 10px;
+    font-weight: 700;
+}
+
+.lineleft {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+.lineright {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100px;
+    position: relative;
+    bottom: 10px;
+}
+
+.content ul li{
+    display: inline-block;
+}
+
+/*MAIN CONTENT*/
+
+/*BIODATA*/
+.main .container {
+    margin: 80px auto;
+    display: flex;
+    height: 500px;
+}
+
+.main h1 {
+    margin-right: 100px;
+}
+
+.container img {
+    position: relative;
+    left: 250px;
+    top: 4px;
+    width: 350px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+.main p {
+    margin-top: 60px;
+    width: 470px;
+    line-height: 22px;
+    font-family: 'Julius Sans One';
+}
+
+.column {
+    flex: 50%;
+}
+
+/*EDUCATION*/
+
+.main .container2 {
+    height: 800px;
+    background-color: #FA6D68;
+    text-align: center;
+}
+
+
+.container2 h2 {
+    font-size: 54px;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.container2 h5 {
+    padding-top: 18px;
+    font-size: 15px;
+}
+
+.container2 p {
+    position: relative;
+    left: 300px;
+    width: 850px;
+    text-align: left;
+}
+
+/*EXPERIENCES*/
+
+.main .container3 {
+    height: 650px;
+    background-color: #21364b;
+    text-align: center;
+}
+
+.container3 h2 {
+    font-size: 54px;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.container3 h5 {
+    padding-top: 18px;
+    font-size: 15px;
+}
+
+.container3 p {
+    position: relative;
+    left: 300px;
+    width: 850px;
+    text-align: left;
+}
+
+/*PROJECTS*/
+
+.main .container4 {
+    height: 650px;
+    background-color: #66A7D5;
+    text-align: center;
+}
+
+.container4 h2 {
+    font-size: 54px;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.container4 h5 {
+    padding-top: 18px;
+    font-size: 15px;
+    width: 850px;
+    position: relative;
+    left: 300px;
+}
+
+#projectcontainer4 {
+    height: 500px;
+    width: 500px;
+}
+
+#projectcontainer4 img {
+    position: relative;
+    left: -10px;
+    top: 75px;
+    width: 350px;
+    height: 300px;
+    transition: 0.4s ease;
+}
+
+#projectcontainer4 img:hover {
+    transform: scale(1.04);
+}
+
+/*NEWSLETTER*/
+
+.main .container5 {
+    height: 400px;
+    text-align: center;
+}
+
+.container5 h2 {
+    font-size: 54px;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.container5 h5 {
+    margin: 20px;
+}
+
+form {
+    margin: 20px;
+}
+
+.namelabel, .emaillabel {
+    
+    font-size: 22px;
+    display: block
+}
+
+#submission {
+    margin: 20px;
+}
+
+.emaillabel {
+    margin-top: 15px;
+}
+
+input {
+    font-size: 20px;
+}
+
+/*FOOTER/CONTACT*/
+
+footer {
+    height: 300px;
+    background-color:white;
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    padding-top: 50px;
+    color: black;
+    
+}
+
+.footerquote {
+    padding-top: 18px;
+    font-size: 15px;
+    width: 850px;
+    position: relative;
+    left: 300px;
+    
+}
+
+.footerquote a {
+    color: blue;
+}
+
+.ig {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    right: 10px;
+    top: 20px;
+    
+}
+
+.fb {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    bottom: 5px;
+    top: 15px;
+}
+
+.github {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 16px;
+    left: 13px;
+
+}
+
+.linkedin {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 17px;
+    top: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
